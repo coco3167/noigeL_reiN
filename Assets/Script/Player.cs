@@ -1,3 +1,4 @@
+/*
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,3 +10,4 @@ public static class Player
     public static List<Objet> inventory = new List<Objet>();
     public static Objet currentPosition;
 }
+*/
