@@ -14,6 +14,11 @@ Cellier -> "Vous êtes dans une pièce ressemblant à un cellier.\n\nDeux élém
                 Lire les feuilles -> "{A écrire}"
                 Récupérer la clé -> "La clé est bien rouillée mais nul doute qu'elle fonctionnera, vous la récupérez."[Porte -<]
             
-Piece 2
+Piste de danse -> "Alors même que vous n'avez pas fini de rentrer, la hauteur de la salle vous frappe.\nVous vous tenez dans ce qui ressemble à une piste de danse mais à l'étage se tient des tables, des chaises et l'unique autre sortie de l'endroit.\nVous cherchez de quoi monter à l'étage du regard et vous ne trouvez qu'une échelle brisée et deux chandeliers."
+    Regarder les chandeliers -> "Les chandeliers sont sans nul doute un travail d'orfèvre, le travail des artisans les ayant réalisés sont visible même par un œil complétement néophyte.\nLe temps n'a que poli l'éclat poussièreux de ces pièces.\n\nL'une est écrasé au sol l'autre tient encore miraculeusement encore en l'air, elles semblent se compléter vous vous dites avant de ressentir un profond sentiment de solitude venant du rompu. Vous remarquez un levier en hauteur en dessous de l'autre."[Observer le levier -<]
+    Regarder l'échelle -> "L'échelle devait autrefois servir à atteindre l'étage, les plus grands morceaux atteignent maintenant difficilement la hauteur de l'armoire du cellier."[Utiliser le levier -<]
+    Observer le Levier -< "Le levier bien que non atteignable seulement en tendant le bras, si vous aviez de quoi vous surélevez grossièrement, vous pourriez l'abaisser. Sur le bois est gravé {TO DO}"
+        Utiliser le levier -< "Vous récupérez le plus gros morceau d'échelle que vous puissiez trouver et l'installer afin d'enclencher le levier. Arrivée en bas, un clic se fait entendre et le chandelier encore en hauteur commence à descendre jusqu'à s'arrêter quelques centimètres au dessus du sol."[Monter sur le chandelier -<]
+    Monter sur le chandelier -< ""
 
 */
