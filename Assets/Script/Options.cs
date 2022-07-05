@@ -1,21 +1,25 @@
 using System.Collections.Generic;
-using System.ComponentModel.Design.Serialization;
-using UnityEngine;
 
 namespace Options
 {
-    public class Option : MonoBehaviour
+    public class Option
     {
         private string _optionTextAction, _optionTextDescription;
-        private Option _parentOption;
+        protected Option _parentOption;
         private List<Option> _childOption;
 
-        protected Option(string optionTextAction, string optionTextDescription, Option parentOption, List<Option> childOption)
+        public Option(string optionTextAction, string optionTextDescription, List<Option> childOption)
         {
             _optionTextAction = optionTextAction;
             _optionTextDescription = optionTextDescription;
-            _parentOption = parentOption;
             _childOption = childOption;
+            if(childOption != null)
+                _childOption.ForEach(SetParent);
+        }
+
+        protected void SetParent(Option option)
+        {
+            option._parentOption = this;
         }
     }
 
@@ -24,8 +28,8 @@ namespace Options
     {
         private bool _locked = false;
         
-        private OptionHidden(string optionTextAction, string optionTextDescription, Option parentOption, List<Option> childOption, bool locked)
-            : base(optionTextAction, optionTextDescription, parentOption, childOption)
+        private OptionHidden(string optionTextAction, string optionTextDescription, List<Option> childOption, bool locked)
+            : base(optionTextAction, optionTextDescription, childOption)
         {
             _locked = locked;
         }
