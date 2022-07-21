@@ -26,6 +26,11 @@ namespace Options
                 ChildOption.ForEach(SetParent);
         }
 
+        public override string ToString()
+        {
+            return Name;
+        }
+
         protected void SetParent(Option option)
         {
             option.ParentOption = this;

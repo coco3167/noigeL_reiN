@@ -7,9 +7,12 @@ using UnityEngine;
 public class Game : MonoBehaviour
 {
     [SerializeField]
-    private TextAsset jsonFile;
+    private TextAsset jsonFileTest;
+    [SerializeField]
+    private TextAsset[] jsonRoom;
 
-    Options.Room testRoom = new Room();
+    //Options.Room testRoom = new Room();
+    private Room Room1 = new Room();
 
     private void Start()
     {
@@ -24,7 +27,7 @@ public class Game : MonoBehaviour
     private void ReadJson()
     {
         //Test
-        testRoom = JsonUtility.FromJson<Options.Room>(jsonFile.text);
+        /*testRoom = JsonUtility.FromJson<Options.Room>(jsonFileTest.text);
         foreach (Option option in testRoom.Options)
         {
             Debug.Log(option.Name);
@@ -32,6 +35,9 @@ public class Game : MonoBehaviour
             Debug.Log(option.ParentOption);
             Debug.Log("====================================");
         }
-        Debug.Log(testRoom.Options.Count);
+        Debug.Log(testRoom.Options.Count);*/
+        
+        //Room 1
+        Room1 = JsonUtility.FromJson<Room>(jsonRoom[0].text);
     }
 }

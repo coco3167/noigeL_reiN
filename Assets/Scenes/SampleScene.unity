@@ -570,7 +570,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a13b6cb8a1918d46b80fe3acc7348f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jsonFile: {fileID: 4900000, guid: b2cca77c6c414203b92002dd2f2f378c, type: 3}
+  jsonFileTest: {fileID: 4900000, guid: b2cca77c6c414203b92002dd2f2f378c, type: 3}
+  jsonRoom:
+  - {fileID: 4900000, guid: 46a8e03ffb11491cacc8724b53f3b278, type: 3}
 --- !u!4 &462426439
 Transform:
   m_ObjectHideFlags: 0

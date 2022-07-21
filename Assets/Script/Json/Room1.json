@@ -1,0 +1,68 @@
+{
+  "Options" :
+  [
+    {
+      "Name": "Cellier",
+      "OptionTextDescription": "Vous êtes dans une pièce ressemblant à un cellier.\\n\\nDeux éléments vous sautent aux yeux :\\n- Une grande et solide porte en bois.\\n- Une imposante armoire semblant être faite du même bois.",
+      "ChildOption": 
+      [
+        {
+          "Name": "Ouvrir la porte",
+          "OptionTextDescription": "Vous ne parvenez pas à l'ouvrir, elle semble fermée à clé.",
+          "ChildOption": null
+        },
+        {
+          "Name": "Ouvrir l'armoire",
+          "OptionTextDescription": "L'armoire  s'ouvre sans difficulté laissant échapper un grincement étrange étrangement satisfaisant.",
+          "ChildOption": 
+          [
+            {
+              "Name": "Regarder dans l'armoire",
+              "OptionTextDescription": "En observant l'intérieur, vous remarquez l'ancienneté de l'endroit.\\nL'ensemble est très poussiéreux et vous parvenez à peine à distinguer les différents éléments.",
+              "ChildOption": 
+              [
+                {
+                  "Name": "Observer les livres",
+                  "OptionTextDescription": "Les livres sont décrépis et tombent presque entièrement en poussière quand vous essayez d'intéragir avec.\\Le temps et les insectes ont bien fait leur travail.",
+                  "ChildOption": null
+                },
+                {
+                  "Name": "Observer les vivres",
+                  "OptionTextDescription": "Tout cela n'a plus aucun intérêt, même les boîtes de conserve sont dans un état de décomposition avancée.",
+                  "ChildOption": null
+                },
+                {
+                  "Name": "Observer la peluche",
+                  "OptionTextDescription": "La peluche de Mia, elle a bien souffert. Vous vous rendez compte que la peluche est aussi abimée que votre mémoire car vous ne savez pas qui est Mia.",
+                  "ChildOption": null
+                },
+                {
+                  "Name": "Ouvrir le tiroir de gauche",
+                  "OptionTextDescription": "Vous essayez de l'ouvrir mais quoi que vous tentiez le tiroir ne bouge pas d'un pouce.\\nVous décidez de l'observer de plus proche et vous remarquez des symboles :\\n\\n<align=center>{Gestalt}<\\align=center>\\n\\nVous décidez de ne pas y préter plus d'attention pour le moment et l'instant.",
+                  "ChildOption": null
+                },
+                {
+                  "Name": "Ouvrir le tiroir de droite",
+                  "OptionTextDescription": "Le tiroir s'ouvre difficilement en n'arrêtant pas de grincer (un peu d'huile ne serait pas de refus).\\nA l'intérieur vous trouvez des feuilles protégées des intempéries et du passage du temps ainsi qu'une clée n'ayant elle pas été épargnée.",
+                  "ChildOption": 
+                  [
+                    {
+                      "Name": "Lire les feuilles",
+                      "OptionTextDescription": "{A écrire}",
+                      "ChildOption": null
+                    },
+                    {
+                      "Name": "Récupérer la clé",
+                      "OptionTextDescription": "La clé est bien rouillée mais nul doute qu'elle fonctionnera, vous la récupérez.",
+                      "ChildOption": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
