@@ -2,36 +2,33 @@ using System.Collections.Generic;
 
 namespace Options
 {
+    
+    [System.Serializable]
+    public class Room
+    {
+        public List<Option> Options = new List<Option>();
+    }
+    
+    
+    [System.Serializable]
     public class Option
     {
-        private string _optionTextAction, _optionTextDescription;
-        protected Option _parentOption;
-        private List<Option> _childOption;
+        public string Name, OptionTextDescription;
+        public Option ParentOption;
+        public List<Option> ChildOption;
 
-        public Option(string optionTextAction, string optionTextDescription, List<Option> childOption)
+        public Option(string name, string optionTextDescription, List<Option> childOption)
         {
-            _optionTextAction = optionTextAction;
-            _optionTextDescription = optionTextDescription;
-            _childOption = childOption;
+            Name = name;
+            OptionTextDescription = optionTextDescription;
+            ChildOption = childOption;
             if(childOption != null)
-                _childOption.ForEach(SetParent);
+                ChildOption.ForEach(SetParent);
         }
 
         protected void SetParent(Option option)
         {
-            option._parentOption = this;
-        }
-    }
-
-
-    public class OptionHidden : Option
-    {
-        private bool _locked = false;
-        
-        private OptionHidden(string optionTextAction, string optionTextDescription, List<Option> childOption, bool locked)
-            : base(optionTextAction, optionTextDescription, childOption)
-        {
-            _locked = locked;
+            option.ParentOption = this;
         }
     }
 }

@@ -1,0 +1,16 @@
+{
+  "Options": [
+    {
+      "Name": "optionParent",
+      "OptionTextDescription": "des trucs parents",
+      "ChildOption":
+      [
+        {
+          "Name": "optionChild",
+          "OptionTextDescription": "des trucs enfants",
+          "ChildOption": "null"
+        }
+      ]
+    }
+  ] 
+}
