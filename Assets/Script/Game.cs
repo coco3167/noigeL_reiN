@@ -39,5 +39,19 @@ public class Game : MonoBehaviour
         
         //Room 1
         Room1 = JsonUtility.FromJson<Room>(jsonRoom[0].text);
+
+        Debug.Log(Room1.Options[0].FindOption("Ouvrir la porte").OptionTextDescription);
+        
+        SetLogic();
+
+        Debug.Log(Room1.Options[0].FindOption("Ouvrir la porte").OptionTextDescription);
+    }
+
+    public void SetLogic()
+    {
+        Options.Option Key = Room1.Options[0].FindOption("Récupérer la clé");
+        List<Options.Option> Doors = new List<Option>(){Room1.Options[0].FindOption("Ouvrir la porte"), Room1.Options[0].FindOption("Ouvrir la porte", true)};
+        Key.UnblockOptions.AddRange(Doors);
+        Key.Selected();
     }
 }

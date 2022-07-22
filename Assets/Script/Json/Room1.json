@@ -8,8 +8,13 @@
       [
         {
           "Name": "Ouvrir la porte",
-          "OptionTextDescription": "Vous ne parvenez pas à l'ouvrir, elle semble fermée à clé.",
-          "ChildOption": null
+          "OptionTextDescription": "Vous ne parvenez pas à l'ouvrir, elle semble fermée à clé."
+        },
+        {
+          "Name": "Ouvrir la porte",
+          "OptionTextDescription": "La porte s'ouvre vous allez dans la pièce 2 //TODO à écrire",
+          "ChildOption": null,
+          "Blocked": true
         },
         {
           "Name": "Ouvrir l'armoire",
@@ -23,23 +28,19 @@
               [
                 {
                   "Name": "Observer les livres",
-                  "OptionTextDescription": "Les livres sont décrépis et tombent presque entièrement en poussière quand vous essayez d'intéragir avec.\\Le temps et les insectes ont bien fait leur travail.",
-                  "ChildOption": null
+                  "OptionTextDescription": "Les livres sont décrépis et tombent presque entièrement en poussière quand vous essayez d'intéragir avec.\\Le temps et les insectes ont bien fait leur travail."
                 },
                 {
                   "Name": "Observer les vivres",
-                  "OptionTextDescription": "Tout cela n'a plus aucun intérêt, même les boîtes de conserve sont dans un état de décomposition avancée.",
-                  "ChildOption": null
+                  "OptionTextDescription": "Tout cela n'a plus aucun intérêt, même les boîtes de conserve sont dans un état de décomposition avancée."
                 },
                 {
                   "Name": "Observer la peluche",
-                  "OptionTextDescription": "La peluche de Mia, elle a bien souffert. Vous vous rendez compte que la peluche est aussi abimée que votre mémoire car vous ne savez pas qui est Mia.",
-                  "ChildOption": null
+                  "OptionTextDescription": "La peluche de Mia, elle a bien souffert. Vous vous rendez compte que la peluche est aussi abimée que votre mémoire car vous ne savez pas qui est Mia."
                 },
                 {
                   "Name": "Ouvrir le tiroir de gauche",
-                  "OptionTextDescription": "Vous essayez de l'ouvrir mais quoi que vous tentiez le tiroir ne bouge pas d'un pouce.\\nVous décidez de l'observer de plus proche et vous remarquez des symboles :\\n\\n<align=center>{Gestalt}<\\align=center>\\n\\nVous décidez de ne pas y préter plus d'attention pour le moment et l'instant.",
-                  "ChildOption": null
+                  "OptionTextDescription": "Vous essayez de l'ouvrir mais quoi que vous tentiez le tiroir ne bouge pas d'un pouce.\\nVous décidez de l'observer de plus proche et vous remarquez des symboles :\\n\\n<align=center>{Gestalt}<\\align=center>\\n\\nVous décidez de ne pas y préter plus d'attention pour le moment et l'instant."
                 },
                 {
                   "Name": "Ouvrir le tiroir de droite",
@@ -48,13 +49,11 @@
                   [
                     {
                       "Name": "Lire les feuilles",
-                      "OptionTextDescription": "{A écrire}",
-                      "ChildOption": null
+                      "OptionTextDescription": "{A écrire}"
                     },
                     {
                       "Name": "Récupérer la clé",
-                      "OptionTextDescription": "La clé est bien rouillée mais nul doute qu'elle fonctionnera, vous la récupérez.",
-                      "ChildOption": null
+                      "OptionTextDescription": "La clé est bien rouillée mais nul doute qu'elle fonctionnera, vous la récupérez."
                     }
                   ]
                 }
